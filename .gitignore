@@ -1,0 +1,4 @@
+/db/build_responder_development
+/db/build_responder_test
+/public/assets*
+/tmp
