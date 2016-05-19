@@ -2,3 +2,6 @@
 /db/build_responder_test
 /public/assets*
 /tmp
+
+# personal files
+_ignore
