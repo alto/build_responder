@@ -5,6 +5,7 @@ module Web::Controllers::Xero
     expose :text
 
     def call(params)
+      self.format = :json
       puts "--------------------------- params"
       puts params.inspect
       puts "---------------------------"
