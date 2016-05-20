@@ -7,10 +7,10 @@ module Web::Controllers::Builds
     def call(params)
       self.format = :json
       build_message = params[:text]
-      Web::Logger.info "--------------------------- params"
-      Web::Logger.info params.inspect
-      Web::Logger.info "---------------------------"
-      @text = case build_message
+      puts "--------------------------- params"
+      puts params.inspect
+      puts "---------------------------"
+      @text = case build_message.downcase
       when /passed/
         ":disco:"
       when /failed/
