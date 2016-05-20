@@ -1,3 +1,5 @@
+get '/xero', to: 'xero#status'
+post '/xero', to: 'xero#status'
 get '/builds/bro', to: 'builds#bro'
 post '/builds', to: 'builds#check'
 get '/', to: 'home#index'
