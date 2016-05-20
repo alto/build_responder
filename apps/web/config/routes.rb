@@ -1,4 +1,4 @@
-get '/builds', to: 'builds#check'
+get '/builds/bro', to: 'builds#bro'
 post '/builds', to: 'builds#check'
 get '/', to: 'home#index'
 # Configure your routes here
