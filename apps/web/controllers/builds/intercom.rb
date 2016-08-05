@@ -6,15 +6,13 @@ module Web::Controllers::Builds
 
     def call(params)
       self.format = :json
-      build_message = params[:text]
+      message = params[:text]
       # puts "--------------------------- params"
       # puts params.inspect
       # puts "---------------------------"
-      @text = case build_message.downcase
-      when /passed/
+      @text = case message.downcase
+      when /signed up as a new user/
         ":disco:"
-      when /failed/
-        ":boo:"
       end
     end
   end
