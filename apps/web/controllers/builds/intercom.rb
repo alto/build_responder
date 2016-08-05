@@ -1,5 +1,5 @@
 module Web::Controllers::Builds
-  class Check
+  class Intercom
     include Web::Action
 
     expose :text
